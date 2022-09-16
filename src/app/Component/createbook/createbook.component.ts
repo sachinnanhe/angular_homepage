@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import User from 'src/app/entity/user';
-import{UserService} from 'src/app/user.service'
+import{BookService} from 'src/app/book.service'
+import Book from 'src/app/entity/book';
 
 @Component({
   selector: 'app-createbook',
@@ -9,21 +9,28 @@ import{UserService} from 'src/app/user.service'
 })
 export class CreatebookComponent implements OnInit {
 
-  user: User = new User();
+  book: Book = new Book();
 
-  users: User[] = [];
+  books: Book[] = [];
 
 
   save(){
-    const observable= this.userService.createuser(this.user);
+    const observable= this.bookService.createBook(this.book);
     observable.subscribe(
       (response:any)=> {
          console.log(response);
-      },)
+         alert("successfully created")
+      },
+      function(error){
+        console.log(error);
+        alert("something went wrong")
+        
+      }
+      )
     
    }
 
-  constructor(private userService: UserService) { }
+  constructor(private bookService: BookService) { }
 
   ngOnInit(): void {
     

@@ -1,0 +1,34 @@
+<div class="container">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col"><b style="color: darkred;">Title</b></th>
+          <th scope="col"><b style="color: darkred;">Author Name</b></th>
+          <th scope="col"><b style="color: darkred;">Category </b></th>
+          <th scope="col"><b style="color: darkred;">Logo</b></th>
+          <th scope="col"><b style="color: darkred;">Price</b></th>
+          <th scope="col"><b style="color: darkred;">Publisher</b></th>
+          <th scope="col"><b style="color: darkred;"></b>publication Date</th>
+          <th scope="col"><b style="color: darkred;">Active</b></th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let s of books">
+          <th>{{s.title}}</th>
+          <th>{{s.authorName}}</th>
+          <th>{{s.category}}</th>
+          <th>{{s.logo}}</th>
+          <th>{{s.price}}</th>
+          <th>{{s.publisher}}</th>
+          <th>{{s.publicationDate}}</th>
+          <th>{{s.active}}</th>
+
+          <th>
+            <!-- <button type="button" routerLink="/updatestudent/{{s.id}}" class="btn btn-primary" >Update</button>
+            <button type="button"(click)="deleteStudent(s)" class="btn btn-danger">Delete</button> -->
+          </th>
+         </tr>
+      </tbody>
+    </table>
+    </div>

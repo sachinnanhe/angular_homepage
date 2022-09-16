@@ -11,6 +11,11 @@ import { Header1Component } from './Component/header1/header1.component';
 import { EditbookComponent } from './Component/editbook/editbook.component';
 import { SearchbookComponent } from './Component/searchbook/searchbook.component';
 import { AboutComponent } from './Component/about/about.component';
+import { CreateAccountComponent } from './Component/create-account/create-account.component';
+import { LogInComponent } from './Component/log-in/log-in.component';
+import { AuthorComponent } from './Component/author/author.component';
+import { DashboardComponent } from './Component/dashboard/dashboard.component';
+import { AllBooksComponent } from './Component/all-books/all-books.component';
 
 
 @NgModule({
@@ -22,6 +27,11 @@ import { AboutComponent } from './Component/about/about.component';
     EditbookComponent,
     SearchbookComponent,
     AboutComponent,
+    CreateAccountComponent,
+    LogInComponent,
+    AuthorComponent,
+    DashboardComponent,
+    AllBooksComponent,
 
   ],
   imports: [

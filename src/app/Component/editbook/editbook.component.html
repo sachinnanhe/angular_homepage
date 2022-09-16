@@ -1,50 +1,36 @@
-<div class="mb-2 row">
-    <label for="inputTitle" class="col-sm-2 col-form-label">
-        <b>Title</b></label>
-    <div class="col-sm-5">
-      <input type="text" class="form-control" id="inputTitle" placeholder="enter book name">
-    </div>
-  </div>
-  <div class="mb-2 row">
-    <label for="inputCategory" class="col-sm-2 col-form-label" >
-        <b>Category</b></label>
-    <div class="col-sm-5">
-      <input type="text" class="form-control" id="inputTitle" placeholder="enter category">
-    </div>
-  </div>
-  <div class="mb-2 row">
-    <label for="inputImage" class="col-sm-2 col-form-label" >
-        <b>Image</b></label>
-    <div class="col-sm-5">
-      <input type="image" class="form-control" id="inputImage" >
-    </div>
-  </div>
-  <div class="mb-2 row">
-    <label for="inputPrice" class="col-sm-2 col-form-label" >
-        <b>Price</b></label>
-    <div class="col-sm-5">
-      <input type="number" class="form-control" id="inputPrice" placeholder="enter in Rs">
-    </div>
-  </div>
-  <div class="mb-2 row">
-    <label for="inputPublisher" class="col-sm-2 col-form-label">
-        <b>Publisher</b></label>
-    <div class="col-sm-5">
-      <input type="text" class="form-control" id="inputPublisher" placeholder="enter publisher name">
-    </div>
-  </div>
-  <div class="mb-2 row">
-    <label for="inputActive" class="col-sm-2 col-form-label" >
-        <b>Active</b></label>
-    <div class="col-sm-5">
-      <input type="text" class="form-control" id="inputActive" placeholder="Yes or No">
-    </div>
-  </div>
-  <div class="mb-2 row">
-    <label for="inputcontent" class="col-sm-2 col-form-label" >
-        <b>Content</b></label>
-    <div class="col-sm-5">
-      <input type="text" class="form-control" id="inputContent" placeholder="enter content">
-    </div>
-  </div>
-  <input class="btn btn-primary" type="submit" value="Submit">
+<div class="container" style="text-align: center;">
+  <h3 style="color: darkred;">Update Book</h3>
+  
+  <hr>
+
+  <label for="text" class="col-sm-2 col-form-label"><b>Title</b></label>
+  <input type="text" placeholder="enter title here"[(ngModel)]="book.title">
+  <br>
+  <br>
+  <label for="text"class="col-sm-2 col-form-label"><b>Author Name</b></label>
+  <input type="text" placeholder="enter author name"[(ngModel)]="book.authorName">
+  <br>
+  <br>
+  <label for="text"class="col-sm-2 col-form-label"><b>Category</b></label>
+  <input type="text" placeholder="enter category"[(ngModel)]="book.category">
+  <br>
+  <br>
+  <label for="url"class="col-sm-2 col-form-label"><b>Logo</b></label>
+  <input type="url" placeholder="enter url"[(ngModel)]="book.logo">
+  <br>
+  <br>
+  <label for="price"class="col-sm-2 col-form-label"><b>Price</b></label>
+  <input type="number" placeholder="enter price in rs"[(ngModel)]="book.price">
+  <br>
+  <br>
+  <label for="text"class="col-sm-2 col-form-label"><b>Publisher</b></label>
+  <input type="text" placeholder="enter publisher name"[(ngModel)]="book.publisher">
+  <br>
+  <br>
+  <label for="date"class="col-sm-2 col-form-label"><b>Publication Date</b></label>
+  <input type="date" placeholder="enter publication date"[(ngModel)]="book.publicationDate">
+  <br>
+  <br>
+  <button type="submit" class="registerbtn">
+    <b style="color: blue" >update</b></button>
+</div>
